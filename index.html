@@ -1,0 +1,129 @@
+<style>
+    .admin-checklist {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        max-width: 650px; /* Ancho intermedio equilibrado */
+        margin: 20px auto;
+        border: 2px solid #922026; /* Concho de vino */
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .admin-header {
+        background: linear-gradient(135deg, #922026 0%, #7a1a1f 100%);
+        color: #ffffff; 
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        border-bottom: 5px solid #d4af37; /* Franja dorada */
+    }
+
+    .admin-section {
+        padding: 18px 30px; /* Espaciado interno cómodo */
+        border-bottom: 1px solid #eee;
+    }
+
+    .admin-section:last-child {
+        border-bottom: none;
+    }
+
+    .section-title {
+        margin: 0 0 12px 0;
+        color: #922026;
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block; 
+        border-bottom: 1px solid #d4af37; /* Línea dorada extensa */
+        padding-bottom: 5px;
+    }
+
+    .check-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px; /* Espacio entre ítems */
+        font-size: 0.9rem;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .check-item input[type="checkbox"] {
+        margin-right: 12px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        accent-color: #922026;
+    }
+
+    .sub-options, .doc-group {
+        margin-top: 8px;
+        padding-left: 10px;
+    }
+
+    .info-tag {
+        background-color: #f9f9f9;
+        border-left: 3px solid #6c757d; /* Barra gris */
+        padding: 8px 12px;
+        margin-top: 8px;
+        font-size: 0.85rem;
+        color: #555;
+    }
+</style>
+
+<div class="admin-checklist">
+    <div class="admin-header">
+        Control de Matriculación - Licencia Tipo C
+    </div>
+
+    <div class="admin-section">
+        <span class="section-title">1. GESTIÓN DE INGRESO</span>
+        <div class="sub-options">
+            <label class="check-item">
+                <input type="checkbox"> Inscripción previa
+            </label>
+            <label class="check-item">
+                <input type="checkbox"> Directo
+            </label>
+        </div>
+    </div>
+
+    <div class="admin-section">
+        <span class="section-title">2. DOCUMENTACIÓN (CARPETA COLGANTE)</span>
+        <div class="doc-group">
+            <label class="check-item"><input type="checkbox"> 3 Copias de Cédula a color</label>
+            <label class="check-item"><input type="checkbox"> 3 Copias de Certificado de Votación</label>
+            <label class="check-item"><input type="checkbox"> Tipo de Sangre (Cruz Roja)</label>
+            <label class="check-item"><input type="checkbox"> 3 Fotos tamaño carnet (Actualizadas)</label>
+            <label class="check-item"><input type="checkbox"> Título de Bachiller / Acta / Promociones</label>
+            <label class="check-item"><input type="checkbox"> Correo electrónico y Teléfonos</label>
+        </div>
+    </div>
+
+    <div class="admin-section">
+        <span class="section-title">3. GESTIÓN DE EVALUACIONES</span>
+        <div style="margin-top: 10px;">
+            <label class="check-item">
+                <input type="checkbox"> <strong>Pago y Aprobación de Exámenes</strong>
+            </label>
+            <div class="info-tag">
+                <em>Incluye:</em> Médico, Psicológico y Psicosensométrico.
+            </div>
+        </div>
+    </div>
+
+    <div class="admin-section" style="background-color: #fffdf5;">
+        <span class="section-title">4. MATRÍCULA</span>
+        <div style="margin-top: 10px;">
+            <label class="check-item">
+                <input type="checkbox"> Legalización de la matrícula
+            </label>
+            <div class="info-tag">
+                Registro asentado oficialmente en el sistema.
+            </div>
+        </div>
+    </div>
+</div>
